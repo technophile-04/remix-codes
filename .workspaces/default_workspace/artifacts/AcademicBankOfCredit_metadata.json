@@ -1,0 +1,450 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "stuAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "courseName",
+						"type": "string"
+					}
+				],
+				"name": "AcceptCourseCred",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_year",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_departName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_univAddress",
+						"type": "address"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addUniversity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "appliedStudents",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "stuName",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "stuAddress",
+								"type": "address"
+							}
+						],
+						"internalType": "struct AcademicBankOfCredit.AppliedStudents[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCompletedCourses",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "courseName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maxCredit",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "year",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct AcademicBankOfCredit.Course[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getUniversities",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "uniAdrrss",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "uniName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "departCount",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct AcademicBankOfCredit.UniversityOutput[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "univAddress",
+						"type": "address"
+					}
+				],
+				"name": "getUniversityCourse",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "courseName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maxCredit",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "year",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct AcademicBankOfCredit.Course[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "studAddr",
+						"type": "address"
+					}
+				],
+				"name": "getUserDetails",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pendingCoursesCred",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "stuName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "courseName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "courseCredits",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct AcademicBankOfCredit.PendingStudents[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "courseName",
+						"type": "string"
+					}
+				],
+				"name": "requestCourseCred",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_toUnivAddress",
+						"type": "address"
+					}
+				],
+				"name": "requestTransferUniversity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "univAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "studentAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "studentName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "currentYear",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "departmentName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalCredits",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "completeCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "inCompleteCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "pendingCourseCount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "toUnivName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "toUnviAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "enum AcademicBankOfCredit.Applied",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "studAddress",
+						"type": "address"
+					}
+				],
+				"name": "transferUniversity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "universites",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "univAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "departCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"AcademicBankOfCredit.sol": "AcademicBankOfCredit"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"AcademicBankOfCredit.sol": {
+			"keccak256": "0xf1421481e9b8ef1320af82ff20d12db1feeb72c22d88e074fe5ab442e4a1dcb1",
+			"license": "Unlicense",
+			"urls": [
+				"bzz-raw://6d03e0bb73295baeca1f7da3ca2111059aaf01eb84fa56ac535027f11c8d25f2",
+				"dweb:/ipfs/QmT6x3sWvenExFzW1xeup54528a5ns8iXwXYtGwjLiLjYE"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x72b6a1d297cd3b033d7c2e4a7e7864934bb767db6453623f1c3082c6534547f4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a8cb8681076e765c214e0d51cac989325f6b98e315eaae06ee0cbd5a9f084763",
+				"dweb:/ipfs/QmNWGHi4zmjxQTYN3NMGnJd49jBT5dE4bxTdWEaDuJrC6N"
+			]
+		}
+	},
+	"version": 1
+}

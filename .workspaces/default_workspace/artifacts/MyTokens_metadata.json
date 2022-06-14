@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "changeTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "tokens",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"mem_vs_storage.sol": "MyTokens"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"mem_vs_storage.sol": {
+			"keccak256": "0x79000e98adbd43c213ed6077ba9216ba7d482e64d760c1e0053df969ec716385",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://70f3df6c812e23a1cd4a74b7856064aa0f0387c5d1518863a4075d9f59b96e5d",
+				"dweb:/ipfs/QmfSvDPDLH3gP6vhc22DW85TfBFL9mgwxyywBD4sP1Zif2"
+			]
+		}
+	},
+	"version": 1
+}
